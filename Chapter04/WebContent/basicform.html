@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>フォームの基本</title>
+</head>
+<body>
+<h3>会員情報入力フォーム</h3>
+<form action="http://gihyo.jp/book" method="post">
+	<table border="1">
+		<tr>
+			<th><label for="userName">ユーザ名</label></th>
+			<td><input type="text"name="userName" id="userName" ></td>
+		</tr>
+		<tr>
+			<th><label for="pass">パスワード</label></th>
+			<td><input type="password" name="pass" id="pass"></td>
+		</tr>
+		<tr>
+			<th>性別</th>
+			<td>
+				<label for="male"><input type="radio" name="gender" id="male" value="male" checked>男</label>
+				<label for="female"><input type="radio" name="gender" id="female" value="female">女</label>
+			</td>
+		</tr>
+		<tr>
+			<th>趣味</th>
+			<td>
+				<label for="book"><input type="checkbox" name="hobby" id="book" value="book">読書</label>
+				<label for="music"><input type="checkbox" name="hobby" id="music" value="music">音楽鑑賞</label>
+				<label for="travel"><input type="checkbox" name="hobby" id="travel" value="travel">旅行</label>
+			</td>
+		</tr>
+		<tr>
+			<th>血液型</th>
+			<td>
+				<select name="blood">
+					<option value="A">A型
+					<option value="B">B型
+					<option value="O">O型
+					<option value="AB">AB型
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>備考</th>
+			<td><textarea rows="5" cols="20" name="remarks"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="送信"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
