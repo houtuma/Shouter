@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class SnsDAO {
-	private final String DSN = "jdbc:mysql://localhost:3306/sns?useSSL=false";
-	private final String USER = "root";
-	private final String PASSWORD = "root";
+	private final String DSN = "jdbc:mysql://192.168.33.10:3306/sns?useSSL=false";
+	private final String USER = "sample";
+	private final String PASSWORD = "sample";
 
 	// データベースの接続情報を返す
 	public Connection getConnection(){
